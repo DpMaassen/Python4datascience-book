@@ -1,1 +1,25 @@
+# TUPLES
+# Tuple: Sequence of object that cannot be changed
+tup = (3, 4, 6)
 
+tup
+tup[0]  # 3
+
+# tuple can be used to convert a sequence to a tuple as seen below
+tuple([4, 0, 2])
+tup1 = tuple('string')
+
+tup1   # ('s', 't', 'r', 'i', 'n', 'g')
+tup1[3]  # 'i'
+
+# creating a tuple of tuples with nested_tup
+nested_tup = (4, 5, 6), (7, 8)
+
+nested_tup   # ((4, 5, 6), (7, 8))
+nested_tup[1]   # (7, 8)
+
+# It's not possible to modify which object is stored in each slot of a tuple
+tup3 = tuple(['foo', [2, 3], True])
+
+tup3   # (4, 5, 6), (7, 8)
+tup3[2] = False  # TypeError: 'tuple' object does not support item assignment
